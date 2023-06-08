@@ -248,6 +248,8 @@ def get_weather_data_from_open_meteo(city_name: str,
     Examples of arguments:
         coordinates=(47.755, -122.2806), start_date="2023-01-01"
     """
+    print(f"Requesting weather for {city_name} since {start_date} till {end_date}.")
+
     start_of_cell = time.time()
     
     if coordinates:
